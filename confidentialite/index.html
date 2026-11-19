@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Logiku — Politique de confidentialité</title>
+    <meta name="color-scheme" content="light dark" />
     <meta
       name="description"
       content="Quelles données l'application Logiku utilise, pourquoi, et quels sont vos droits."
@@ -75,17 +76,17 @@
   <body>
     <main>
       <h1>Politique de confidentialité de Logiku</h1>
-      <p class="meta">En vigueur depuis le 19 novembre 2026.</p>
+      <p class="meta">En vigueur depuis le <time datetime="2026-11-19">19 novembre 2026</time>.</p>
 
-      <div class="summary">
+      <section class="summary" aria-label="En bref">
         <p>
           <strong>En bref :</strong> Logiku n'a pas de compte, pas de publicité et ne mesure pas
           votre utilisation de l'application. Vos parties, votre progression et vos réglages restent
           sur votre téléphone. Seules deux choses quittent le téléphone, sans votre nom ni votre
-          e-mail : un rapport anonyme quand l'application plante, et les informations nécessaires à
-          l'achat de Logiku+.
+          e-mail : un rapport technique quand l'application plante, et une vérification de l'achat
+          de Logiku+.
         </p>
-      </div>
+      </section>
 
       <h2>Qui est responsable de vos données</h2>
       <p>
@@ -98,9 +99,14 @@
       <p>
         Votre partie en cours, votre progression dans le parcours, vos badges, votre série de
         grilles du jour, vos statistiques et vos réglages (thème, sons, vibrations, aides) sont
-        enregistrés uniquement sur votre téléphone. Ils ne nous sont jamais envoyés. Ils sont
-        effacés quand vous désinstallez l'application ou effacez ses données dans les réglages du
-        téléphone.
+        enregistrés uniquement sur votre téléphone. Ils ne nous sont jamais envoyés.
+      </p>
+      <p>
+        Si la sauvegarde Android est activée sur votre téléphone, Android peut copier ces données
+        dans votre compte Google pour les restaurer sur un nouveau téléphone. Cette copie est gérée
+        par Google, selon vos réglages Android ; nous n'y avons pas accès. Les données sont effacées
+        du téléphone quand vous désinstallez l'application ou effacez ses données dans les réglages
+        du téléphone.
       </p>
 
       <h2>Ce qui quitte votre téléphone</h2>
@@ -108,13 +114,22 @@
       <h3>1. Les rapports de plantage (Sentry)</h3>
       <p>
         Quand l'application rencontre une erreur ou plante, elle envoie un rapport à notre
-        prestataire Sentry pour que nous puissions corriger le problème. Ce rapport contient :
+        prestataire Sentry pour que nous puissions corriger le problème. Rien n'est envoyé tant que
+        l'application fonctionne normalement. Ce rapport contient :
       </p>
       <ul>
         <li>la description technique de l'erreur et l'endroit du code où elle s'est produite ;</li>
-        <li>la version de l'application, le modèle du téléphone et la version d'Android ;</li>
         <li>
-          le nom des derniers écrans ouverts et des dernières actions faites dans l'application.
+          des informations techniques sur le téléphone : modèle, version d'Android, langue, fuseau
+          horaire, mémoire et batterie disponibles, version de l'application ;
+        </li>
+        <li>
+          le nom des derniers écrans ouverts, des derniers boutons touchés et les derniers messages
+          techniques de l'application ;
+        </li>
+        <li>
+          un identifiant aléatoire propre à cette installation de l'application, qui permet de
+          savoir si plusieurs plantages viennent du même téléphone.
         </li>
       </ul>
       <p>
@@ -135,17 +150,18 @@
         <a href="https://policies.google.com/privacy?hl=fr">règles de confidentialité de Google</a>.
       </p>
       <p>
-        Pour savoir si vous avez acheté Logiku+ et vous permettre de restaurer votre achat sur un
-        autre téléphone, l'application utilise le service RevenueCat. RevenueCat reçoit :
+        À chaque ouverture, l'application demande au service RevenueCat si vous possédez Logiku+,
+        que vous l'ayez acheté ou non : c'est ce qui débloque les thèmes et permet de restaurer
+        votre achat sur un autre téléphone. RevenueCat reçoit :
       </p>
       <ul>
         <li>
-          un identifiant anonyme créé par l'application, qui n'est lié à aucune autre donnée vous
-          concernant ;
+          un identifiant aléatoire créé par l'application, qui n'est lié ni à votre nom ni à votre
+          e-mail ;
         </li>
         <li>
-          les informations de l'achat transmises par Google Play (produit, date, prix, devise,
-          référence de commande) ;
+          si vous achetez Logiku+, les informations de l'achat transmises par Google Play (produit,
+          date, prix, devise, référence de commande) ;
         </li>
         <li>
           le modèle du téléphone, la version d'Android et de l'application, et le pays déduit de
@@ -154,15 +170,23 @@
       </ul>
       <p>
         Ces informations sont conservées tant que l'application est proposée, pour que votre achat
-        reste restaurable. RevenueCat est une société américaine : ces données peuvent être traitées
-        aux États-Unis, avec les garanties prévues par le RGPD (clauses contractuelles types de la
-        Commission européenne). Voir la
+        reste restaurable. Voir la
         <a href="https://www.revenuecat.com/privacy/">politique de confidentialité de RevenueCat</a
         >.
       </p>
       <p>
-        <em>Pourquoi :</em> vous fournir l'achat que vous avez payé. Base légale : l'exécution du
-        contrat d'achat.
+        <em>Pourquoi :</em> vous fournir l'achat que vous avez payé et savoir quels thèmes afficher.
+        Base légale : l'exécution du contrat d'achat si vous avez acheté Logiku+, sinon notre
+        intérêt légitime à vérifier qui y a droit.
+      </p>
+
+      <h3>Transferts hors de l'Union européenne et sécurité</h3>
+      <p>
+        Sentry et RevenueCat sont des sociétés américaines. Certaines données peuvent donc être
+        traitées aux États-Unis, avec les garanties prévues par le RGPD (clauses contractuelles
+        types de la Commission européenne ou cadre de protection des données UE–États-Unis). Toutes
+        les données sont transmises de façon chiffrée (HTTPS), et seules les personnes qui
+        développent l'application peuvent consulter les rapports de plantage.
       </p>
 
       <h2>Ce que Logiku ne fait pas</h2>
@@ -171,25 +195,26 @@
         <li>Aucune publicité, et aucun partage de données avec des annonceurs.</li>
         <li>Aucune mesure d'audience ni suivi de votre utilisation.</li>
         <li>
-          Aucun accès à votre position, vos contacts, vos photos, votre micro ou votre appareil
-          photo.
+          Aucun accès à votre position, vos contacts, vos photos et fichiers, votre micro ou votre
+          appareil photo.
         </li>
+        <li>Aucune décision automatisée ni profilage vous concernant.</li>
         <li>Aucune vente de données.</li>
       </ul>
 
       <h2>Enfants</h2>
       <p>
-        Logiku peut être utilisée à tout âge. Comme elle ne demande aucune information personnelle,
-        elle ne collecte pas sciemment de données permettant d'identifier un enfant.
+        Logiku ne demande aucune information personnelle et ne collecte donc pas sciemment de
+        données permettant d'identifier un enfant.
       </p>
 
       <h2>Vos droits</h2>
       <p>
-        Vous avez le droit d'accéder à vos données, de les faire rectifier ou effacer, de vous
-        opposer à leur traitement ou d'en limiter l'usage, et de les récupérer. Comme nous ne
-        connaissons ni votre nom ni votre e-mail, dites-nous dans votre message ce qui permet de
-        retrouver vos données (par exemple la date de votre achat et la référence de commande Google
-        Play). Écrivez à
+        Vous avez le droit d'accéder à vos données, de les faire rectifier ou effacer, d'en limiter
+        l'usage, et de les récupérer. Vous pouvez aussi vous opposer à tout moment aux traitements
+        fondés sur notre intérêt légitime. Comme nous ne connaissons ni votre nom ni votre e-mail,
+        dites-nous dans votre message ce qui permet de retrouver vos données (par exemple la date de
+        votre achat et la référence de commande Google Play). Écrivez à
         <a href="mailto:contact@ams-technology.net">contact@ams-technology.net</a> : nous répondons
         dans un délai d'un mois.
       </p>
